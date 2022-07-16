@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const NavContainer = styled.nav`
     width: 100%;
-    height: 50px;
+    /* height: ${(props) => (props.responsiveNavBar ? "100vh" : "50px")}; */
     background-color: #5FDD97;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,6 @@ export const ContainerInner = styled.div`
     width: 100%;
     height: 50px;
     display: flex;
-    
 `
 
 export const NavLinkContainer = styled.div`
@@ -53,6 +52,10 @@ export const NavLink = styled(Link)`
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
+    @media (max-width: 700px) {
+        display: none;
+    }
+
 `
 
 export const Logo = styled.img`
@@ -61,7 +64,26 @@ export const Logo = styled.img`
     height: 90%;
 `
 
+export const Hamburger = styled.div`
+    height: 50px;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 45px;
+    cursor: pointer;
+    margin-bottom: 2px;
+
+    @media (min-width: 700px) {
+        display: none;
+    }
+`
 
 export const ContainerExtended = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    @media (min-width: 700px)  {
+        display: none;
+    }
 `
