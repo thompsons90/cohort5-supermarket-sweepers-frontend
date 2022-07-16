@@ -6,9 +6,11 @@ import {
   ContainerExtended,
   ContainerInner,
   NavLinkContainer,
-  NavLink
+  NavLink,
+  Logo
 } from "../../styles/Nav.style";
 import { Link } from 'react-router-dom';
+import LogoImg from "../../assets/logo.png";
 
 
 const Nav = () => {
@@ -16,6 +18,7 @@ const Nav = () => {
     <NavContainer>
       <ContainerInner>
         <ContainerLeft>
+        <Logo src={LogoImg}></Logo>
         </ContainerLeft>
         <ContainerRight>
         <NavLinkContainer>
