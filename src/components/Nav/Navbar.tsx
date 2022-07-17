@@ -16,9 +16,10 @@ import LogoImg from "../../assets/logo.png";
 
 const Nav = () => {
 
-  const [responsiveNavBar, setResponsiveNav ] = useState(false)
+  const [responsiveNav, setResponsiveNav ] = useState(false)
+
   return(
-    <NavContainer extend={responsiveNavBar}>
+    <NavContainer extend={responsiveNav}>
       <ContainerInner>
         <ContainerLeft>
         <Logo src={LogoImg}></Logo>
@@ -32,7 +33,7 @@ const Nav = () => {
                 setResponsiveNav((curr) => !curr);
                   }}
                   > 
-                    {responsiveNavBar ? <>&#10005;</> : <> &#8801;</>}
+                    {responsiveNav ? <>&#10005;</> : <> &#8801;</>}
               </Hamburger>
           </NavLinkContainer>
         </ContainerRight>
@@ -50,3 +51,4 @@ const Nav = () => {
 }
 
 export default Nav;
+

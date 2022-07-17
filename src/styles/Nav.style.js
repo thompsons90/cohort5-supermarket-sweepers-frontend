@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 
 export const NavContainer = styled.nav`
     width: 100%;
-    height: ${(props) => (props.responsiveNavBar ? "50vh" : "50px")};
-    /* height: 50vh; */
+    height: ${(props) => (props.responsiveNav === props.setResponsiveNav ? "30vh" : "50px")};
     background-color: #5FDD97;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (min-width: 700px) {
+        height: 50px;
+    }
 
 `;
 
@@ -59,11 +62,17 @@ export const NavLink = styled(Link)`
 `
 
 export const NavLinkExtended = styled(Link)`
-  color: white;
+  color: black;
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
+  :hover {
+    /* background-color: rgba(0,0,0,0.2); */
+    transform: translateY(-1px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+  }
 `;
 
 
@@ -94,7 +103,6 @@ export const ContainerExtended = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 
     @media (min-width: 700px)  {
         display: none;
