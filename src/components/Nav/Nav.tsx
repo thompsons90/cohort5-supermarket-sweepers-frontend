@@ -2,7 +2,7 @@ import React from "react";
 import { FaBars } from 'react-icons/fa';
 import LogoImg from "../../assets/logo.png";
 import "./logo.css";
-import { Nav, NavContainer, NavLogo, Hamburger, NavMenu, NavItem, Links } from "./NavElements";
+import { Nav, NavContainer, NavLogo, Hamburger, NavMenu, NavContent, Links } from "./NavElements";
 
 const NavBar = () => {
   return (
@@ -16,15 +16,15 @@ const NavBar = () => {
             <FaBars />
           </Hamburger>
           <NavMenu>
-            <NavItem>
+            <NavContent>
               <Links to="/">Home</Links>
-            </NavItem>
-            <NavItem>
+            </NavContent>
+            <NavContent>
               <Links to="/about">About</Links>
-            </NavItem>
-            <NavItem>
+            </NavContent>
+            <NavContent>
               <Links to="/search">Search</Links>
-            </NavItem>
+            </NavContent>
           </NavMenu>
         </NavContainer>
       </Nav>

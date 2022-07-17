@@ -60,7 +60,7 @@ export const NavMenu = styled.ul`
       }
 `;
 
-export const NavItem = styled.li`
+export const NavContent = styled.li`
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -73,10 +73,14 @@ export const Links = styled(LinkS)`
     text-decoration: none;
     padding: 0 1rem;
     height: 100%; 
+    font-weight: 700;
+    font-family: 'Readex Pro', sans-serif;
     cursor: pointer;
     
     :hover {
-         background-color: rgba(0,0,0,0.2)
+         background-color: rgba(0,0,0,0.1);
+         transform: translateY(-1px);
+         border-radius: 5px;
     } */
 
     color: black;
@@ -89,7 +93,7 @@ export const Links = styled(LinkS)`
     align-self: center;
     background-color: #E8FFB7;
     border-radius: 35%;
-    border: 2.5px solid black;
+    border: 2px inset black;
     cursor: pointer;
     :hover {
         transform: translateY(-1px);
