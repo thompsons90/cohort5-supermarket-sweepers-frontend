@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 
 export const NavContainer = styled.nav`
     width: 100%;
-    /* height: ${(props) => (props.responsiveNavBar ? "100vh" : "50px")}; */
+    height: ${(props) => (props.responsiveNavBar ? "50vh" : "50px")};
+    /* height: 50vh; */
     background-color: #5FDD97;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
 `;
 
@@ -15,14 +17,12 @@ export const ContainerLeft = styled.div`
     display: flex;
     align-items: center;
     padding-left: 5%;
-    border-bottom: 3px solid black;
 `
 export const ContainerRight = styled.div`
     flex: 30%;
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
-    border-bottom: 3px solid black;
 `
 
 export const ContainerInner = styled.div`
@@ -58,21 +58,33 @@ export const NavLink = styled(Link)`
 
 `
 
+export const NavLinkExtended = styled(Link)`
+  color: white;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 10px;
+`;
+
+
 export const Logo = styled.img`
     margin: 10px;
     max-width: 180px;
     height: 90%;
+
+    @media (max-width: 500px) {
+        max-width: 140px;
+        height: 70%;
+    }
 `
 
 export const Hamburger = styled.div`
-    height: 50px;
+    height: 60px;
     background: none;
     border: none;
     color: black;
     font-size: 45px;
     cursor: pointer;
-    margin-bottom: 2px;
-
     @media (min-width: 700px) {
         display: none;
     }
@@ -82,6 +94,7 @@ export const ContainerExtended = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 
     @media (min-width: 700px)  {
         display: none;

@@ -8,9 +8,10 @@ import {
   NavLinkContainer,
   NavLink,
   Logo,
-  Hamburger
+  Hamburger,
+  NavLinkExtended
 } from "../../styles/Nav.style";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import LogoImg from "../../assets/logo.png";
 
 const Nav = () => {
@@ -38,9 +39,9 @@ const Nav = () => {
       </ContainerInner>
       {Hamburger && (
         <ContainerExtended>
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="/about">About</NavLink>
-              <NavLink to="/search">Search</NavLink>
+              <NavLinkExtended to="/">Home</NavLinkExtended>
+              <NavLinkExtended to="/about">About</NavLinkExtended>
+              <NavLinkExtended to="/search">Search</NavLinkExtended>
       </ContainerExtended>
       )}
     </NavContainer>
