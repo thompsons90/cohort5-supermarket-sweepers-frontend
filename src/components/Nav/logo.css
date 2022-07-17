@@ -1,7 +1,7 @@
 .logo {
     width: 10em;
     position: absolute;
-    left: 1%;
+    left: 5%;
 }
 
 @media screen and (max-width: 500px) {
