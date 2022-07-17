@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import LogoImg from "../../assets/logo.png";
+import './logo.css';
 import {
     Nav,
     NavContainer,
@@ -10,8 +12,8 @@ const NavBar = () => {
     <div>
         <Nav>
             <NavContainer>
-                <NavLogo>
-
+                <NavLogo to="/">
+                  <img className="logo" src={LogoImg}></img>
                 </NavLogo>
             </NavContainer>
         </Nav>
