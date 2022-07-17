@@ -90,6 +90,7 @@ export const Links = styled(LinkS)`
     background-color: #E8FFB7;
     border-radius: 35%;
     border: 2.5px solid black;
+    cursor: pointer;
     :hover {
         transform: translateY(-1px);
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

@@ -18,7 +18,11 @@ const NavBar = () => {
           <NavMenu>
             <NavItem>
               <Links to="/">Home</Links>
+            </NavItem>
+            <NavItem>
               <Links to="/about">About</Links>
+            </NavItem>
+            <NavItem>
               <Links to="/search">Search</Links>
             </NavItem>
           </NavMenu>
