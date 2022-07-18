@@ -67,7 +67,7 @@ export const NavContent = styled.li`
 `;
 
 export const Links = styled(LinkS)`
-    /* color: black;
+    color: black;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -81,9 +81,9 @@ export const Links = styled(LinkS)`
          background-color: rgba(0,0,0,0.1);
          transform: translateY(-1px);
          border-radius: 5px;
-    } */
+    }
 
-    color: black;
+    /* color: black;
     font-size: small;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
@@ -98,7 +98,7 @@ export const Links = styled(LinkS)`
     :hover {
         transform: translateY(-1px);
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
+    } */
 
     &.acticve{
         border-bottom: 3px solid black;

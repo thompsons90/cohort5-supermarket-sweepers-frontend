@@ -1,10 +1,20 @@
 import React from "react";
-import { FaBars } from 'react-icons/fa';
+import { FaBars } from "react-icons/fa";
 import LogoImg from "../../assets/logo.png";
 import "./logo.css";
-import { Nav, NavContainer, NavLogo, Hamburger, NavMenu, NavContent, Links } from "./NavElements";
+import {
+  Nav,
+  NavContainer,
+  NavLogo,
+  Hamburger,
+  NavMenu,
+  NavContent,
+  Links,
+} from "./NavElements";
 
-const NavBar = () => {
+
+
+const NavBar = ({toggleState}) => {
   return (
     <div>
       <Nav>
@@ -12,7 +22,7 @@ const NavBar = () => {
           <NavLogo to="/">
             <img className="logo" src={LogoImg}></img>
           </NavLogo>
-          <Hamburger>
+          <Hamburger onClick={toggleState}>
             <FaBars />
           </Hamburger>
           <NavMenu>
