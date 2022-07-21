@@ -9,9 +9,13 @@ import {
   DropLink,
 } from "./DropElements";
 
+interface DropProps {
+  isOpen: boolean;
+  toggleState: boolean;
+}
+ 
 
-
-const DropDown = ({isOpen, toggleState}) => {
+const DropDown: React.FC<DropProps> = ({isOpen, toggleState}) => {
   return (
     <DropContainer isOpen={isOpen} onClick={toggleState}>
       <Icon onClick={toggleState}>
