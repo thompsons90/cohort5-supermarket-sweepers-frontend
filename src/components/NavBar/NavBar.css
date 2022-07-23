@@ -1,0 +1,37 @@
+.NavBar {
+    background:  #5FDD97;
+    height: 50px;
+    /* margin-top: -50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.Nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1100px;
+}
+
+.Logo {
+    height: 3em;
+    position: absolute;
+    left: 5%;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .NavBar {
+        transition: 0.5s all ease;
+    }
+    
+}
