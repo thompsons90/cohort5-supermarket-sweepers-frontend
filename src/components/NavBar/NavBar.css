@@ -72,7 +72,7 @@
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 870px) {
     .NavBar {
         transition: 0.5s all ease;
     }
@@ -85,12 +85,10 @@
         display: block;
     }
 
-    
-}
-
-@media screen and (max-width: 762px) {
     .Logo {
         width: 8rem;
     }
+
+    
 }
 

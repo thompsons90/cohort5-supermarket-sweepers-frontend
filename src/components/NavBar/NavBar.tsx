@@ -3,17 +3,18 @@ import './NavBar.css';
 import Logo from '../../assets/logo.png';
 import { FaBars } from 'react-icons/fa';
 import { useState } from 'react';
+import DrowDown from '../DropDown/DrowDown';
 
 interface Props {
-  open: boolean;
+  setIsOpen: boolean;
   isOpen: boolean;
 }
 
 const NavBar: React.FC<Props> = () => {
-  const [ open, isOpen ] = useState(false);
+  const [ isOpen, setIsOpen ] = useState(false);
   
 const handleClick = () => {
-  isOpen(!open);
+  setIsOpen(!isOpen);
 }
 
   return (
@@ -31,6 +32,7 @@ const handleClick = () => {
             </div>
         </div>
         <FaBars className="Hamburger" onClick={handleClick} />
+        <DrowDown />
     </nav>
   )
 }

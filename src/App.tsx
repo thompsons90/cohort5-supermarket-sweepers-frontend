@@ -13,8 +13,7 @@ const App = () => {
 
   return (
     <>
-    <DropDown />
-    <NavBar open={false} isOpen={false} />
+    <NavBar isOpen={false} setIsOpen={false}  />
     <div className='container'>
      <Routes>
       <Route path='/' element={<Home />} />
