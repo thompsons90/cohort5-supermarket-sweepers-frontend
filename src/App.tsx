@@ -6,17 +6,15 @@ import About from './pages/about';
 import Search from './pages/search';
 import NavBar from './components/NavBar/NavBar';
 import DropDown from './components/DropDown/DrowDown';
-
-
-
-
+import { useState } from 'react';
 
 
 const App = () => {
+
   return (
     <>
     <DropDown />
-    <NavBar />
+    <NavBar open={false} isOpen={false} />
     <div className='container'>
      <Routes>
       <Route path='/' element={<Home />} />
