@@ -1,0 +1,12 @@
+.DropContainer {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 40%;
+    background-color: #5FDD97;
+    display: grid;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}

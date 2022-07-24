@@ -5,6 +5,8 @@ import Home from './pages/home'
 import About from './pages/about';
 import Search from './pages/search';
 import NavBar from './components/NavBar/NavBar';
+import DropDown from './components/DropDown/DrowDown';
+
 
 
 
@@ -13,6 +15,7 @@ import NavBar from './components/NavBar/NavBar';
 const App = () => {
   return (
     <>
+    <DropDown />
     <NavBar />
     <div className='container'>
      <Routes>
