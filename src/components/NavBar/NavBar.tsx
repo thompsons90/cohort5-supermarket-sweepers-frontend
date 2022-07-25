@@ -8,6 +8,7 @@ import '../DropDown/DropDown.css'
 interface Props {
   setIsOpen: boolean;
   isOpen: boolean;
+  
 }
 
 const NavBar: React.FC<Props> = () => {
