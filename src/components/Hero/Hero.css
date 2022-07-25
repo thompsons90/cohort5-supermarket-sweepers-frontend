@@ -1,5 +1,42 @@
 .Container {
-    height: 500px;
+    height: 100vh;
     width: 100%;
     background-color: rgba(0,0,0,0.1);
+    display: flex;
+
+}
+
+.hero-img {
+    z-index: -999;
+    width: 10em;
+    height: 10em;
+    opacity: 8%;
+}
+
+.hero-img .one {
+    width: 20em;
+}
+
+#img-one {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+}
+
+#img-two {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+#img-three {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+}
+
+#img-five {
+    position: absolute;
+    top: 60%;
+    left: 20%;
 }
