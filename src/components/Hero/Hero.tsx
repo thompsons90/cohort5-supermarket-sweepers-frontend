@@ -22,7 +22,7 @@ const Hero = () => {
             <img className="hero-img" src={Shopper} id="img-three" alt="" />
             <img className="hero-img" src={Bag} id="img-four" alt="" />
             <img className="hero-img" src={Market} id="img-five" alt="" />
-            <img className="hero-img" src={Lady} id="img-five" alt="" />
+            <img className="hero-img" src={Lady} id="img-lady" alt="" />
             <img className="hero-img" src={ShopBag} id="img-six" alt="" />
             <img className="hero-img" src={CheckOut} id="img-seven" alt="" />
             <img className="hero-img" src={Front} id="img-eight" alt="" />

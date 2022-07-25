@@ -1,7 +1,7 @@
 .Container {
     height: 100vh;
     width: 100%;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.2);
     display: flex;
     overflow: auto;
 
@@ -11,13 +11,13 @@
     z-index: -999;
     width: 10em;
     height: 10em;
-    opacity: 8%;
+    opacity: 10%;
 }
 
 #img-one {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 75%;
 }
 
 #img-two {
@@ -35,13 +35,13 @@
 #img-five {
     position: absolute;
     top: 40%;
-    left: 20%;
+    left: 45%;
 }
 
 #img-six {
     position: absolute;
     top: 85%;
-    left: 10%;
+    left: 5%;
 }
 
 #img-seven {
@@ -56,6 +56,11 @@
     left: 40%;
 }
 
+#img-lady {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
 
 
 
