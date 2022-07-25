@@ -1,6 +1,8 @@
 .NavBar {
-    background:  #5FDD97;
-    height: 50px;
+    background:  #ffff;
+    border: 3px #5FDD97 solid;
+    border-top: none;
+    height: 60px;
     /* margin-top: -50px; */
     display: flex; 
     justify-content: space-between; 
