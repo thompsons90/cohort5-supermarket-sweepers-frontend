@@ -3,7 +3,7 @@ import './NavBar.css';
 import Logo from '../../assets/logo.png';
 import { FaBars } from 'react-icons/fa';
 import { useState } from 'react';
-import DrowDown from '../DropDown/DrowDown';
+import '../DropDown/DropDown.css'
 
 interface Props {
   setIsOpen: boolean;
@@ -32,7 +32,16 @@ const handleClick = () => {
             </div>
         </div>
         <FaBars className="Hamburger" onClick={handleClick} />
-        <DrowDown />
+        <div>
+        <aside className={isOpen ? "DropContainer" : "Hidden"}>
+        <ul className="DropItems">
+                <li className='DropLink'><a href="/">Home</a></li>
+                <li className='DropLink'><a href="/about">About</a></li>
+                <li className='DropLink'><a href="/search">Search</a></li>
+              </ul>       
+        </aside>
+
+    </div>
     </nav>
   )
 }

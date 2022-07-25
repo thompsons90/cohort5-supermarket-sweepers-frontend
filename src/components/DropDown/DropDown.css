@@ -8,8 +8,7 @@
     align-items: center;
     top: 6%;
     left: 0;
-    transition: 0.3s ease-in-out;
-    /* display: none; */
+    transition: 0.8s ease-in-out;
 }
 
 .Hidden {
@@ -37,8 +36,9 @@
 a {
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: .5em;
+    font-weight: 700;
 }
 
 a:hover {
@@ -50,5 +50,11 @@ a:hover {
 @media screen and (min-width: 870px) {
     .DropContainer {
         display: none;
+    }
+}
+
+@media screen and (max-width: 967px) {
+    .DropLink {
+        padding: .2em;
     }
 }
