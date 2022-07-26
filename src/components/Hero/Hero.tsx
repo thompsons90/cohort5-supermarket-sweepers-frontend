@@ -9,13 +9,17 @@ import Lady from '../../assets/ms-shopper.png';
 import ShopBag from '../../assets/bag-two.jpg';
 import CheckOut from '../../assets/checkOut.gif';
 import Front from '../../assets/front.gif';
+import HeroImg from '../../assets/logo.png';
 interface Props {
 
 }
 
 const Hero = () => {
+
+
   return (
     <div className='Container'>
+        <img src={HeroImg} className="HeroImg" alt="" />
         <div className="bg-pics">
             <img className="hero-img" src={Cart} id="img-one" alt="" />
             <img className="hero-img" src={Produce} id="img-two" alt="" />
@@ -27,6 +31,9 @@ const Hero = () => {
             <img className="hero-img" src={CheckOut} id="img-seven" alt="" />
             <img className="hero-img" src={Front} id="img-eight" alt="" />
         </div>
+
+        
+        <a href='/search' className="bargain-btn">Search For Bargains</a>
         
 
     </div>
