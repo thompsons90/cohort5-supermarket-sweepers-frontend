@@ -1,0 +1,171 @@
+.Container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    overflow: auto;
+    position: fixed;
+
+}
+
+.HeroImg {
+    width: 35rem;
+    height: 15rem;
+    z-index: 999;
+    position: absolute;
+    left: 33%;
+    top: 20%;
+    
+}
+
+.hero-img {
+    z-index: -999;
+    width: 10em;
+    height: 10em;
+    opacity: 15%;
+}
+
+#img-one {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+}
+
+#img-two {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+#img-three {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+}
+
+#img-five {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
+#img-six {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+}
+
+#img-seven {
+    position: absolute;
+    top: 80%;
+    left: 90%;
+}
+
+#img-eight {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+}
+
+#img-lady {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.bargain-btn {
+    padding: 1.5em;
+    width: 12.5em;
+    position: absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 42%;
+    top: 70%;
+    border-radius: 10px;
+    border: 2px white solid;
+    background-color: #51c585;
+    opacity: 70%;
+    
+}
+
+.bargain-btn:hover {
+    transform: translateY(-1px);
+    transition: 0.5 ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .hero-img {
+        width: 5em;
+        height: 5em;
+    }
+
+    #img-one {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+    }
+    
+    #img-two {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+    }
+    
+    #img-three {
+        position: absolute;
+        top: 10%;
+        left: 80%;
+    }
+
+    #img-four {
+        position: absolute;
+        left: 10%;
+    }
+    
+    #img-five {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    }
+
+    #img-seven {
+        position: absolute;
+        top: 80%;
+        left: 70%;
+    }
+
+    #img-eight {
+        position: absolute;
+        top: 70%;
+        left: 40%;
+    }
+
+    #img-lady {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+    }
+
+    .HeroImg {
+        height: 10rem;
+        width: 15rem;
+        left: 17%;
+        top: 15%;
+        z-index: -999;
+    }
+
+    .bargain-btn {
+        position: fixed;
+        top: 50%;
+        left: 20%;
+        width: 13em;
+        font-size: 18px;
+    }
+
+}
+

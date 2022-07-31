@@ -1,94 +1,89 @@
 .NavBar {
-    background:  #5FDD97;
-    height: 50px;
-    /* margin-top: -50px; */
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    font-size: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  background: #ffff;
+  border-bottom: 3px #51c585 solid;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .Nav-container {
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    z-index: 1;
-    width: 70%;
-    padding: 0 24px;
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  z-index: 1;
+  width: 70%;
+  padding: 0 24px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .Logo {
-    height: 3em;
-    position: absolute;
-    left: 5%;
+  height: 3em;
+  position: absolute;
+  left: 5%;
 }
 
 .NavMenu {
-    display: flex;
-      align-items: center;
-      list-style: none;
-      text-align: center;
-      position: relative;
-      left: 100%;
-      width: 5rem;
-}     
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  left: 100%;
+  width: 5rem;
+}
 
 .NavItems {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-    text-decoration: none;
-    
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
 }
 
 .Link a {
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    color: black;
-    margin-right: 1.2em;
-    font-size: 1.3em;
-    padding: .5em;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+  margin-right: 1.5em;
+  font-size: 1.3em;
+  padding: 0.5em;
 }
 
 .Link a:hover {
-    background-color: rgba(0,0,0,0.2);
-    border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 .Hamburger {
-    height: 1.5rem;
-    width: 1.5rem;
-    margin-right: .5em;
-    display: none;
-    cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5em;
+  display: none;
+  cursor: pointer;
 }
-
 
 @media screen and (max-width: 870px) {
-    .NavBar {
-        transition: 0.5s all ease;
-    }
+  .NavBar {
+    transition: 0.5s all ease;
+  }
 
-    .NavMenu {
-        display: none;
-    }
+  .NavMenu {
+    display: none;
+  }
 
-    .Hamburger {
-        display: block;
-    }
+  .Hamburger {
+    display: block;
+  }
 
-    .Logo {
-        width: 8rem;
-    }
-
-    
+  .Logo {
+    width: 8rem;
+  }
 }
-
