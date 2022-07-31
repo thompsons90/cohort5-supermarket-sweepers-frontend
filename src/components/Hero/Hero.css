@@ -4,6 +4,7 @@
     background-color: rgba(0,0,0,0.2);
     display: flex;
     overflow: auto;
+    position: fixed;
 
 }
 
@@ -153,7 +154,7 @@
     .HeroImg {
         height: 10rem;
         width: 15rem;
-        left: 15%;
+        left: 17%;
         top: 15%;
         z-index: -999;
     }
@@ -161,7 +162,7 @@
     .bargain-btn {
         position: fixed;
         top: 50%;
-        left: 18%;
+        left: 20%;
         width: 13em;
         font-size: 18px;
     }
