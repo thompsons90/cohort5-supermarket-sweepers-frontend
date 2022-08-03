@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 import Logo from '../../assets/logo.png';
 import { FaBars } from 'react-icons/fa';
@@ -26,9 +27,16 @@ const handleClick = () => {
             <div className="NavMenu">
             
               <ul className="NavItems">
-                <li className='Link'><a href="/">Home</a></li>
-                <li className='Link'><a href="/about">About</a></li>
-                <li className='Link'><a href="/search">Search</a></li>
+                <li className='Link'>
+                  <Link to="/">Home</Link>
+                </li>
+                <li className='Link'>
+                  <Link to="/about">About</Link>
+                </li>
+                <li className='Link'>
+                  <Link to="/search">Search</Link>
+                </li>
+                
               </ul>       
             </div>
         </div>
@@ -36,9 +44,16 @@ const handleClick = () => {
         <div>
         <aside className={isOpen ? "DropContainer" : "Hidden"}>
         <ul className="DropItems">
-                <li className='DropLink'><a href="/">Home</a></li>
-                <li className='DropLink'><a href="/about">About</a></li>
-                <li className='DropLink'><a href="/search">Search</a></li>
+                <li className='DropLink'>
+                  <Link to="/">Home</Link>
+                </li>
+                <li className='DropLink'>
+                  <Link to="/about">About</Link>
+                </li>
+                <li className='DropLink'>
+                  <Link to="/search">Search</Link>
+                </li>
+                
               </ul>       
         </aside>
 
