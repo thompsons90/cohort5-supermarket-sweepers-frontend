@@ -31,7 +31,7 @@
 
 .NavMenu {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   list-style: none;
   text-align: center;
   position: relative;
@@ -45,6 +45,9 @@
   list-style: none;
   text-align: center;
   text-decoration: none;
+  position: absolute;
+  top: -25px;
+  left: 200%;
 }
 
 .Link a {
