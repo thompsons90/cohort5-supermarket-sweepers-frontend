@@ -1,0 +1,23 @@
+.search-container{
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 7.5%;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 5vh;
+}
+.search-card{
+    background-color: black;
+    color: white;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+.search-card-element{
+    margin-top: 2%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.search-card-element:nth-child(1){
+    margin-bottom: 2rem;
+}
