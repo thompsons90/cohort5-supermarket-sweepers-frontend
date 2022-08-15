@@ -9,6 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  width: auto;
 }
 
 .Nav-container {
@@ -16,7 +17,7 @@
   justify-content: space-between;
   height: 50px;
   z-index: 1;
-  width: 70%;
+  /* width: 70%; */
   padding: 0 24px;
   max-width: 1200px;
   display: grid;
@@ -45,9 +46,9 @@
   list-style: none;
   text-align: center;
   text-decoration: none;
-  position: absolute;
-  top: -25px;
-  left: 200%;
+  position: relative;
+  
+  margin-left: 70vw;
 }
 
 .Link a {

@@ -1,7 +1,7 @@
 .DropContainer {
     position: fixed;
     z-index: -999;
-    width: 100%;
+    width: 0%;
     height: 30%;
     background-color: #ffffff;
     border-bottom: 3px #51c585 solid;
@@ -16,7 +16,7 @@
 .Hidden {
     position: fixed;
     z-index: -998;
-    width: 100%;
+    width: 0%;
     height: 30%;
     background-color: #ffffff;
     border-bottom: 3px #51c585 solid;
