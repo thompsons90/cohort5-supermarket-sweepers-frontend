@@ -30,9 +30,9 @@ const handleClick = () => {
                 <li className='Link'>
                   <Link to="/">Home</Link>
                 </li>
-                <li className='Link'>
+                {/* <li className='Link'>
                   <Link to="/about">About</Link>
-                </li>
+                </li> */}
                 <li className='Link'>
                   <Link to="/search">Search</Link>
                 </li>
@@ -42,7 +42,7 @@ const handleClick = () => {
         </div>
         <FaBars className="Hamburger" onClick={handleClick} />
         <div>
-        <aside className={isOpen ? "DropContainer" : "Hidden"}>
+        {/* <aside className={isOpen ? "DropContainer" : "Hidden"}>
         <ul className="DropItems">
                 <li className='DropLink'>
                   <Link to="/">Home</Link>
@@ -55,7 +55,7 @@ const handleClick = () => {
                 </li>
                 
               </ul>       
-        </aside>
+        </aside> */}
 
     </div>
     </nav>
