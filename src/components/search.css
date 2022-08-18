@@ -2,8 +2,9 @@
     display: grid;
     height: auto;
     margin-top: 2%;
-    margin-left: 7.5%;
-    grid-template-columns: 20% 20% 20% 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
     grid-gap: 5vh;
 }
 .search-card{
@@ -19,4 +20,9 @@
 }
 .search-card-element:nth-child(1){
     margin-bottom: 2rem;
+}
+.search-bar{
+    width: 90%;
+    margin: auto;
+    /* margin-left: 20%; */
 }
