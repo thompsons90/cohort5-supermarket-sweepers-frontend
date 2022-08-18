@@ -10,13 +10,11 @@ const App = () => {
   return (
     <>
     <NavBar isOpen={false} setIsOpen={false}  />
-    <div className='container'>
      <Routes>
       <Route path='/' element={<Home />} />
       {/* <Route path='/about' element={<About />} /> */}
       <Route path='/search' element={<Search />} />
      </Routes>
-    </div>
     </>
   )
 }
